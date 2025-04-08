@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c60679d5.css",
+    "main.js": "/static/js/main.6a6a1f32.js",
+    "static/media/smaragd.jpg": "/static/media/smaragd.c59d3e5b6bda058586d6.jpg",
+    "static/media/Diamond22.png": "/static/media/Diamond22.b5374498432607e4ab45.png",
+    "index.html": "/index.html",
+    "main.c60679d5.css.map": "/static/css/main.c60679d5.css.map",
+    "main.6a6a1f32.js.map": "/static/js/main.6a6a1f32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c60679d5.css",
+    "static/js/main.6a6a1f32.js"
+  ]
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #bc4123;
+  --secondary: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background: var(--secondary);
+}
+
+* {
+  color: "text.primary";
+  margin: 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+button {
+  font-family: "Poppins";
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+header {
+  padding: 20px 0px;
+  top: 0;
+  position: sticky;
+  background-color: white;
+}
+
+/*   ROOT LAYOUT   */
+
+.root-layout {
+  padding: 0px 20px;
+}
+
+.rootLinksDark,
+.rootLinksLight {
+  display: flex;
+}
+
+.rootLinksLight {
+  color: black;
+}
+
+.rootLinksDark a {
+  color: white;
+  border-color: #121212;
+}
+
+.headerDark {
+  background-color: #121212;
+}
+
+.headerLight {
+  background-color: white;
+}
+
+.minLinksDark a {
+  color: white;
+}
+
+.minLinksLight a {
+  color: black;
+}
+
+/*   NAVBAR   */
+
+header nav {
+  display: flex;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  padding-right: 10px;
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav img {
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin: 0px 0.3em;
+  color: black;
+}
+
+header nav a:hover {
+  border-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav a.active {
+  background: var(--primary);
+  color: white;
+}
+
+/*   PAGE CONTENT   */
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/*   HOME NAV   */
+
+.home nav {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.home nav a {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: lightgrey;
+}
+
+.home nav a:hover {
+  border-color: red;
+  background-color: white;
+}
+
+/*   GEMS GRID   */
+
+.gemsGrid {
+  margin: 20px 0;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+  .gemsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .gemsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*   GEM DETAILS   */
+
+.gem-details {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.gemBtn {
+  margin-right: 5px;
+}
+
+#navLinkGem {
+  color: white;
+  text-decoration: none;
+}
+
+/*   CREATE or CHANGE GEMS DETAILS   */
+
+.createDiv {
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px 30px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.blink_me {
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
